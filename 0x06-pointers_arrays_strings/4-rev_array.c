@@ -4,19 +4,17 @@
  * reverse_array -> reversing an array
  * @a: array a
  * @n: an element of an array
+ * Return: void
  */
 void reverse_array(int *a, int n)
 {
-	int *p, i, aux, k;
+	int p, k;
 
-	p = a;
-	for (i = 0; i < n; i++)
-		p++;
-	for (k = 0; k <= n / 2; k++)
+	for (p = 0; (p < (n - 1) / 2);
+			p++)
 	{
-		aux = a[k];
-		a[k] = *p;
-		*p = aux;
-		p--;
+	k = a[p];
+	a[p] = a[n - 1 - p];
+	a[n - 1 - p] = k;
 	}
 }
