@@ -9,9 +9,9 @@
  */
 int palindromechecker(char *s, int len, int i)
 {
-	if (i < len && str[i] == str[len])
-		return (palindromechecker(str, len - 1, i + 1));
-	if (str[i] != str[len])
+	if (i < len && s[i] == s[len])
+		return (palindromechecker(s, len - 1, i + 1));
+	if (s[i] != s[len])
 		return (0);
 	return (1);
 }
