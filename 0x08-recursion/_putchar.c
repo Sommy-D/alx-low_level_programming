@@ -1,5 +1,3 @@
-!<arch>
-_putchar.c/     0           0     0     644     247       `
 #include <unistd.h>
 
 /**
@@ -13,4 +11,3 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-
